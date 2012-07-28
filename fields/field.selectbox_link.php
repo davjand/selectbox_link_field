@@ -272,7 +272,7 @@
 							'id' => $entry->get('id'),
 							'section_handle' => $section_info[$section_id]['handle'],
 							'section_name' => $section_info[$section_id]['name'],
-							'value' => $field->getParameterPoolValue($entry->getData($field->get('id')), $entry->get('id'))
+							'value' => $field->prepareTableValue($entry->getData($field->get('id')))
 						);
 					}
 				}
